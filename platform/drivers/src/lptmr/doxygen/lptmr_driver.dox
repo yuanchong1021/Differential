@@ -1,0 +1,100 @@
+/*!
+@addtogroup lptmr
+@brief Instance-based driver API for configuring and operating lpTMR peripherals.
+
+@details
+The `lpTMR_DRV_*` API declared in `lptmr_driver.h` provides the application
+facing layer for the lpTMR peripheral. The driver resolves instance indices to
+base addresses, applies timer or pulse-counter configuration, converts between
+microseconds and hardware ticks, and exposes runtime helpers for compare flags,
+interrupt control, and pin selection.
+
+@section lptmr_driver_responsibilities Driver Responsibilities
+- Populate default configuration structures for lpTMR instances.
+- Initialize and de-initialize timer or pulse-counter operation by instance.
+- Convert Timer Mode compare values between microseconds and hardware ticks.
+- Validate runtime compare updates and return status codes for reconfiguration failures.
+- Expose compare flag, interrupt, run-state, and pulse-input configuration helpers.
+
+@section lptmr_driver_categories Driver API Categories
+
+@subsection lptmr_driver_cat_init Initialization & De-initialization
+| Function | Description |
+|----------|-------------|
+| lpTMR_DRV_InitConfigStruct() | Fill `lptmr_config_t` with module defaults. |
+| lpTMR_DRV_Init() | Apply a configuration and optionally start the counter immediately. |
+| lpTMR_DRV_Deinit() | Stop the instance and restore reset-state register values. |
+
+@subsection lptmr_driver_cat_config Configuration
+| Function | Description |
+|----------|-------------|
+| lpTMR_DRV_SetConfig() | Apply a new timer or pulse-counter configuration. |
+| lpTMR_DRV_GetConfig() | Read back the active runtime configuration in tick units. |
+
+@subsection lptmr_driver_cat_compare Compare Value Access
+| Function | Description |
+|----------|-------------|
+| lpTMR_DRV_SetCompareValueByCount() | Program the compare register directly in ticks. |
+| lpTMR_DRV_GetCompareValueByCount() | Read the compare register in ticks. |
+| lpTMR_DRV_SetCompareValueByUs() | Program the compare period in microseconds for Timer Mode. |
+| lpTMR_DRV_GetCompareValueByUs() | Convert the active Timer Mode period back to microseconds. |
+
+@subsection lptmr_driver_cat_runtime Runtime Status & Control
+| Function | Description |
+|----------|-------------|
+| lpTMR_DRV_GetCompareFlag() | Query the compare-match flag state. |
+| lpTMR_DRV_ClearCompareFlag() | Clear the compare-match flag. |
+| lpTMR_DRV_IsRunning() | Check whether the counter is enabled. |
+| lpTMR_DRV_SetInterrupt() | Enable or disable compare interrupts. |
+| lpTMR_DRV_GetCounterValueByCount() | Read the current counter value in ticks. |
+| lpTMR_DRV_StartCounter() | Enable the lpTMR counter. |
+| lpTMR_DRV_StopCounter() | Disable the lpTMR counter. |
+
+@subsection lptmr_driver_cat_pin Pulse Counter Pin Configuration
+| Function | Description |
+|----------|-------------|
+| lpTMR_DRV_SetPinConfiguration() | Update pulse source selection and active edge. |
+
+@section lptmr_driver_example Usage Example
+@code{.c}
+#define INST_LPTMR (0U)
+
+lptmr_config_t config;
+
+lpTMR_DRV_InitConfigStruct(&config);
+config.workMode = lpTMR_WORKMODE_TIMER;
+config.counterUnits = lpTMR_COUNTER_UNITS_MICROSECONDS;
+config.compareValue = 1000U;
+
+lpTMR_DRV_Init(INST_LPTMR, &config, true);
+
+if (lpTMR_DRV_GetCompareFlag(INST_LPTMR))
+{
+    lpTMR_DRV_ClearCompareFlag(INST_LPTMR);
+}
+@endcode
+
+@section lptmr_driver_notes Important Notes
+@warning The lpTMR peripheral clock must be enabled before calling `lpTMR_DRV_Init()` or `lpTMR_DRV_SetConfig()`.
+@warning The microsecond APIs are valid only in Timer Mode. Calling them in Pulse-Counter Mode triggers `DEV_ASSERT` checks.
+@warning Runtime compare updates can fail with `STATUS_ERROR` or `STATUS_TIMEOUT` if the counter state does not allow the new compare value.
+@note `lpTMR_DRV_GetConfig()` always reports the compare value in ticks, regardless of how it was programmed originally.
+@note The driver caches the timer clock frequency during configuration and reuses that value for microsecond conversions.
+
+@section lptmr_driver_integration Integration Guide
+
+@subsection lptmr_driver_units Compilation Units
+@verbatim
+${SDK_PATH}\platform\drivers\src\lptmr\lptmr_driver.c
+${SDK_PATH}\platform\drivers\src\lptmr\lptmr_hw_access.c
+@endverbatim
+
+@subsection lptmr_driver_include Include Path
+@verbatim
+${SDK_PATH}\platform\drivers\inc\
+${SDK_PATH}\platform\drivers\src\lptmr\
+@endverbatim
+
+@subsection lptmr_driver_dependencies Dependencies
+- `clock_manager`
+*/

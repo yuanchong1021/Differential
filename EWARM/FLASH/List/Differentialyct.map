@@ -1,0 +1,1042 @@
+###############################################################################
+#
+# IAR ELF Linker V9.32.1.338/W64 for ARM                  28/Sep/2026  16:49:34
+# Copyright 2007-2022 IAR Systems AB.
+#
+#    Output file  =
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Exe\Differentialyct.out
+#    Map file     =
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\List\Differentialyct.map
+#    Command line =
+#        -f
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Exe\Differentialyct.out.rsp
+#        (D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\app\app_tc.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\bsp\bsp_indicator.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\bsp\bsp_motor.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\bsp\bsp_position_gpio.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\bsp\bsp_switch.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\clock_config.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\clock\YTM32B1Lx\clock_YTM32B1Lx.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\interrupt_config.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\interrupt\interrupt_manager.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\lptmr_config.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\lptmr\lptmr_driver.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\lptmr\lptmr_hw_access.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\app\main.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\mpwm\mpwm_common.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\mpwm_config.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\mpwm\mpwm_pwm_driver.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\rtos\osif\osif_baremetal.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\pin_mux.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\pins\pins_driver.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\pins\pins_port_hw_access.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\RamInit0.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\RamInit1.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\RamInit2.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\startup.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\devices\YTM32B1LE1\startup\system_YTM32B1LE1.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\task\task_ctrl.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\task\task_position.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\task\task_sched.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\task\task_switch.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\vector.o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board\vector_table_copy.o
+#        --no_out_extension -o
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Exe\Differentialyct.out
+#        --map
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\List\Differentialyct.map
+#        --config
+#        D:\project\YTM32B1LE14H0MTHR\Differential\EWARM/../board/yt_linker.icf
+#        --semihosting --entry Reset_Handler --vfe --text_out locale
+#        --cpu=Cortex-M0+ --fpu=None)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+define block isr_vector { section .isr_vector };
+define block IVT_block
+   with fixed order, alignment = 8 {
+      section IVT_start_section, section isr_vector_region_start_section,
+      block isr_vector, section isr_vector_region_end_section,
+      section IVT_end_section };
+"IVT_IVT":
+       place in [from 0x0 to 0xbf] { block IVT_block };
+define block i { section i, section i* };
+define block rodata { section .rodata, section .rodata* };
+define block text { section .text, section .text* };
+define block TEXT_block
+   with fixed order, alignment = 8 {
+      section TEXT_start_section, section i_region_start_section, block i,
+      section i_region_end_section, section rodata_region_start_section,
+      block rodata, section rodata_region_end_section,
+      section text_region_start_section, block text,
+      section text_region_end_section, section TEXT_end_section };
+"TEXT_TEXT":
+       place in [from 0xc0 to 0xffff] { block TEXT_block };
+define block ARM.exidx { section .ARM.exidx, section .ARM.exidx* };
+define block ARM_block
+   with fixed order, alignment = 8 {
+      section ARM_start_section, section ARM.exidx_region_start_section,
+      block ARM.exidx, section ARM.exidx_region_end_section,
+      section ARM_end_section };
+"TEXT_ARM":
+       place in [from 0xc0 to 0xffff] { block ARM_block };
+define block code_ram_rom { section .code_ram_init };
+define block CODE_RAM_rom_block
+   with fixed order, alignment = 8 {
+      section CODE_RAM_rom_start_section, block code_ram_rom,
+      section CODE_RAM_rom_end_section };
+"TEXT_CODE_RAM_rom":
+       place in [from 0xc0 to 0xffff] { block CODE_RAM_rom_block };
+define block data_rom { section .data_init, section .data_init* };
+define block DATA_RAM_rom_block
+   with fixed order, alignment = 8 {
+      section DATA_RAM_rom_start_section, block data_rom,
+      section DATA_RAM_rom_end_section };
+"TEXT_DATA_RAM_rom":
+       place in [from 0xc0 to 0xffff] { block DATA_RAM_rom_block };
+define block IVT_RAM_empty_block with size = 192 { };
+define block IVT_RAM_block
+   with fixed order, alignment = 1K {
+      section IVT_RAM_start_section, section IVT_RAM_region_start_section,
+      block IVT_RAM_empty_block, section IVT_RAM_region_end_section,
+      section IVT_RAM_end_section };
+"IVT_RAM_IVT_RAM":
+       place in [from 0x2000'0000 to 0x2000'00bf] { block IVT_RAM_block };
+define block STACK_empty_block with size = 1K { };
+define block STACK_block
+   with fixed order, alignment = 4 {
+      section STACK_start_section, section STACK_region_start_section,
+      block STACK_empty_block, section STACK_region_end_section,
+      section STACK_end_section };
+"STACK_STACK":
+       place in [from 0x2000'1c00 to 0x2000'1fff] { block STACK_block };
+define block bss { section .bss, section .bss* };
+define block BSS_block
+   with fixed order, alignment = 4 {
+      section BSS_start_section, section bss_region_start_section, block bss,
+      section bss_region_end_section, section BSS_end_section };
+"RAM_BSS":
+       place in [from 0x2000'00c0 to 0x2000'1bff] { block BSS_block };
+define block code_ram { section .code_ram };
+define block CODE_RAM_block
+   with fixed order, alignment = 4 {
+      section CODE_RAM_start_section, section code_ram_region_start_section,
+      block code_ram, section code_ram_region_end_section,
+      section CODE_RAM_end_section };
+"RAM_CODE_RAM":
+       place in [from 0x2000'00c0 to 0x2000'1bff] { block CODE_RAM_block };
+define block data with end alignment = 4 { section .data, section .data* };
+define block DATA_RAM_block
+   with fixed order, alignment = 4, end alignment = 4 {
+      section DATA_RAM_start_section, section data_region_start_section,
+      block data, section data_region_end_section,
+      section DATA_RAM_end_section };
+"RAM_DATA_RAM":
+       place in [from 0x2000'00c0 to 0x2000'1bff] { block DATA_RAM_block };
+do not initialize {
+   section .isr_vector, section i, section i*, section .rodata,
+   section .rodata*, section .text, section .text*, section .ARM.exidx,
+   section .ARM.exidx*, section .code_ram, section .data, section .data*,
+   section .bss, section .bss* };
+initialize manually with packing = none {
+   section .code_ram, section .data, section .data* };
+keep { section .isr_vector };
+
+No sections matched the following patterns:
+
+  section .ARM.exidx      in block ARM.exidx
+  section .ARM.exidx*     in block ARM.exidx
+  section .code_ram       in block code_ram
+  section .code_ram_init  in block code_ram_rom
+  section i               in block i
+
+
+  Section                 Kind         Address    Size  Object
+  -------                 ----         -------    ----  ------
+"IVT_IVT":                                        0xc0
+  IVT_block                                0x0    0xc0  <Block>
+    IVT_start_section     uninit           0x0     0x0  <internal module>
+    isr_vector_region_start_section
+                          uninit           0x0     0x0  <internal module>
+    isr_vector                             0x0    0xc0  <Block>
+      .isr_vector         ro code          0x0    0xc0  vector.o [2]
+    isr_vector_region_end_section
+                          uninit          0xc0     0x0  <internal module>
+    IVT_end_section       uninit          0xc0     0x0  <internal module>
+                                        - 0xc0    0xc0
+
+"TEXT_TEXT":                                    0x30b4
+  TEXT_block                              0xc0  0x30b4  <Block>
+    TEXT_start_section    uninit          0xc0     0x0  <internal module>
+    i_region_start_section
+                          uninit          0xc0     0x0  <internal module>
+    i_region_end_section  uninit          0xc0     0x0  <internal module>
+    rodata_region_start_section
+                          uninit          0xc0     0x0  <internal module>
+    rodata                                0xc0   0x1f8  <Block>
+      .rodata             const           0xc0    0x24  clock_config.o [2]
+      .rodata             const           0xe4     0xc  clock_config.o [2]
+      .rodata             const           0xf0    0x50  clock_YTM32B1Lx.o [5]
+      .rodata             const          0x140    0x10  lptmr_config.o [2]
+      .rodata             const          0x150     0x4  lptmr_driver.o [7]
+      .rodata             const          0x154     0xc  main.o [1]
+      .rodata             const          0x160     0x8  main.o [1]
+      .rodata             const          0x168     0x8  main.o [1]
+      .rodata             const          0x170   0x118  pin_mux.o [2]
+      .rodata             const          0x288    0x20  RamInit1.o [2]
+      .rodata             const          0x2a8     0xc  RamInit1.o [2]
+      .rodata             const          0x2b4     0x4  vector_table_copy.o [2]
+    rodata_region_end_section
+                          uninit         0x2b8     0x0  <internal module>
+    text_region_start_section
+                          uninit         0x2b8     0x0  <internal module>
+    text                                 0x2b8  0x2ebc  <Block>
+      .text               ro code        0x2b8   0x5c8  app_tc.o [1]
+      .text               ro code        0x880    0x4e  ABImemset.o [12]
+      .text               ro code        0x8ce     0x2  RamInit2.o [2]
+      .text               ro code        0x8d0   0x494  bsp_position_gpio.o [3]
+      .text               ro code        0xd64   0x224  bsp_motor.o [3]
+      .text               ro code        0xf88    0xc0  pins_driver.o [9]
+      .text               ro code       0x1048   0x12a  interrupt_manager.o [6]
+      .text               ro code       0x1174   0x6e4  mpwm_pwm_driver.o [8]
+      .text               ro code       0x1858   0x12c  mpwm_common.o [8]
+      .text               ro code       0x1984   0x1d8  pins_port_hw_access.o [9]
+      .text               ro code       0x1b5c    0xae  I32DivModFast.o [12]
+      .text               ro code       0x1c0c   0x8c2  clock_YTM32B1Lx.o [5]
+      .text               ro code       0x24d0     0x2  IntDivZer.o [12]
+      .text               ro code       0x24d4    0x88  bsp_indicator.o [3]
+      .text               ro code       0x255c    0x38  bsp_switch.o [3]
+      .text               ro code       0x2594   0x340  lptmr_driver.o [7]
+      .text               ro code       0x28d4    0x32  I64Mul.o [12]
+      .text               ro code       0x2906    0x7c  I64DivMod.o [12]
+      .text               ro code       0x2984    0x22  I64Shl.o [12]
+      .text               ro code       0x29a6    0x18  lptmr_hw_access.o [7]
+      .text               ro code       0x29c0     0x2  I64DivZer.o [12]
+      .text               ro code       0x29c4    0xcc  main.o [1]
+      .text               ro code       0x2a90    0xac  task_position.o [11]
+      .text               ro code       0x2b3c    0x8c  task_switch.o [11]
+      .text               ro code       0x2bc8    0xe4  task_ctrl.o [11]
+      .text               ro code       0x2cac    0xc0  task_sched.o [11]
+      .text               ro code       0x2d6c    0x4e  ABImemcpy.o [12]
+      .text               ro code       0x2dbc    0x18  osif_baremetal.o [10]
+      .text               ro code       0x2dd4    0x68  RamInit0.o [2]
+      .text               ro code       0x2e3c   0x140  RamInit1.o [2]
+      .text               ro code       0x2f7c    0x50  startup.o [2]
+      .text               ro code       0x2fcc    0x68  system_YTM32B1LE1.o [4]
+      .text               ro code       0x3034    0x48  vector_table_copy.o [2]
+      .text               ro code       0x307c     0x8  vector_table_copy.o [2]
+      .text               ro code       0x3084     0x8  vector_table_copy.o [2]
+      .text               ro code       0x308c     0x8  vector_table_copy.o [2]
+      .text               ro code       0x3094     0x8  vector_table_copy.o [2]
+      .text               ro code       0x309c     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30a4     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30ac     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30b4     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30bc     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30c4     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30cc     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30d4     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30dc     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30e4     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30ec     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30f4     0x8  vector_table_copy.o [2]
+      .text               ro code       0x30fc     0x8  vector_table_copy.o [2]
+      .text               ro code       0x3104     0x8  vector_table_copy.o [2]
+      .text               ro code       0x310c     0x8  vector_table_copy.o [2]
+      .text               ro code       0x3114     0x8  vector_table_copy.o [2]
+      .text               ro code       0x311c     0x8  vector_table_copy.o [2]
+      .text               ro code       0x3124     0x8  vector_table_copy.o [2]
+      .text               ro code       0x312c     0x8  vector_table_copy.o [2]
+      .text               ro code       0x3134     0x8  vector_table_copy.o [2]
+      .text               ro code       0x313c     0x8  vector_table_copy.o [2]
+      .text               ro code       0x3144     0x8  vector_table_copy.o [2]
+      .text               ro code       0x314c     0x8  vector_table_copy.o [2]
+      .text               ro code       0x3154     0x8  vector_table_copy.o [2]
+      .text               ro code       0x315c     0x8  vector_table_copy.o [2]
+      .text               ro code       0x3164     0x8  vector_table_copy.o [2]
+      .text               ro code       0x316c     0x8  vector_table_copy.o [2]
+    text_region_end_section
+                          uninit        0x3174     0x0  <internal module>
+    TEXT_end_section      uninit        0x3174     0x0  <internal module>
+                                      - 0x3174  0x30b4
+
+"TEXT_ARM":                                        0x0
+  ARM_block                             0x3178     0x0  <Block>
+    ARM_start_section     uninit        0x3178     0x0  <internal module>
+    ARM.exidx_region_start_section
+                          uninit        0x3178     0x0  <internal module>
+    ARM.exidx_region_end_section
+                          uninit        0x3178     0x0  <internal module>
+    ARM_end_section       uninit        0x3178     0x0  <internal module>
+
+"TEXT_CODE_RAM_rom":                               0x0
+  CODE_RAM_rom_block                    0x3178     0x0  <Block>
+    CODE_RAM_rom_start_section
+                          uninit        0x3178     0x0  <internal module>
+    CODE_RAM_rom_end_section
+                          uninit        0x3178     0x0  <internal module>
+
+"TEXT_DATA_RAM_rom":                              0x78
+  DATA_RAM_rom_block                    0x3178    0x78  <Block>
+    DATA_RAM_rom_start_section
+                          uninit        0x3178     0x0  <internal module>
+    data_rom                            0x3178    0x78  <Block>
+      Initializer bytes   const         0x3178    0x78  <for data-1>
+    DATA_RAM_rom_end_section
+                          uninit        0x31f0     0x0  <internal module>
+                                      - 0x31f0    0x78
+
+"IVT_RAM_IVT_RAM":                                0xc0
+  IVT_RAM_block                    0x2000'0000    0xc0  <Block>
+    IVT_RAM_start_section
+                          uninit   0x2000'0000     0x0  <internal module>
+    IVT_RAM_region_start_section
+                          uninit   0x2000'0000     0x0  <internal module>
+    IVT_RAM_empty_block            0x2000'0000    0xc0  <Block>
+      IVT_RAM_empty_block
+                          uninit   0x2000'0000    0xc0  <Block tail>
+    IVT_RAM_region_end_section
+                          uninit   0x2000'00c0     0x0  <internal module>
+    IVT_RAM_end_section   uninit   0x2000'00c0     0x0  <internal module>
+                                 - 0x2000'00c0    0xc0
+
+"RAM_BSS":                                       0x391
+  BSS_block                        0x2000'00c0   0x391  <Block>
+    BSS_start_section     uninit   0x2000'00c0     0x0  <internal module>
+    bss_region_start_section
+                          uninit   0x2000'00c0     0x0  <internal module>
+    bss                            0x2000'00c0   0x391  <Block>
+      .bss                uninit   0x2000'00c0     0x8  app_tc.o [1]
+      .bss                uninit   0x2000'00c8     0x4  bsp_motor.o [3]
+      .bss                uninit   0x2000'00cc     0x4  bsp_motor.o [3]
+      .bss                uninit   0x2000'00d0     0x4  bsp_motor.o [3]
+      .bss                uninit   0x2000'00d4     0x4  bsp_motor.o [3]
+      .bss                uninit   0x2000'00d8     0x4  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'00dc     0x4  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'00e0     0x4  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'00e4   0x200  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'02e4     0x4  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'02e8     0x4  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'02ec     0x4  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'02f0     0x4  clock_config.o [2]
+      .bss                uninit   0x2000'02f4    0x10  clock_YTM32B1Lx.o [5]
+      .bss                uninit   0x2000'0304     0x4  clock_YTM32B1Lx.o [5]
+      .bss                uninit   0x2000'0308     0x4  interrupt_manager.o [6]
+      .bss                uninit   0x2000'030c     0x4  lptmr_driver.o [7]
+      .bss                uninit   0x2000'0310     0x4  main.o [1]
+      .bss                uninit   0x2000'0314     0x4  mpwm_common.o [8]
+      .bss                uninit   0x2000'0318    0x60  mpwm_config.o [2]
+      .bss                uninit   0x2000'0378     0x4  osif_baremetal.o [10]
+      .bss                uninit   0x2000'037c    0x14  task_ctrl.o [11]
+      .bss                uninit   0x2000'0390     0x4  task_sched.o [11]
+      .bss                uninit   0x2000'0394    0xa0  task_sched.o [11]
+      .bss                uninit   0x2000'0434     0x4  task_sched.o [11]
+      .bss                uninit   0x2000'0438     0x2  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'043a     0x2  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'043c     0x2  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'043e     0x2  task_position.o [11]
+      .bss                uninit   0x2000'0440     0x2  task_switch.o [11]
+      .bss                uninit   0x2000'0442     0x1  app_tc.o [1]
+      .bss                uninit   0x2000'0443     0x1  bsp_indicator.o [3]
+      .bss                uninit   0x2000'0444     0x1  bsp_motor.o [3]
+      .bss                uninit   0x2000'0445     0x1  bsp_motor.o [3]
+      .bss                uninit   0x2000'0446     0x1  bsp_motor.o [3]
+      .bss                uninit   0x2000'0447     0x1  bsp_motor.o [3]
+      .bss                uninit   0x2000'0448     0x1  bsp_motor.o [3]
+      .bss                uninit   0x2000'0449     0x1  bsp_motor.o [3]
+      .bss                uninit   0x2000'044a     0x1  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'044b     0x1  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'044c     0x1  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'044d     0x1  bsp_position_gpio.o [3]
+      .bss                uninit   0x2000'044e     0x1  task_ctrl.o [11]
+      .bss                uninit   0x2000'044f     0x1  task_position.o [11]
+      .bss                uninit   0x2000'0450     0x1  task_position.o [11]
+    bss_region_end_section
+                          uninit   0x2000'0451     0x0  <internal module>
+    BSS_end_section       uninit   0x2000'0451     0x0  <internal module>
+                                 - 0x2000'0451   0x391
+
+"RAM_CODE_RAM":                                    0x0
+  CODE_RAM_block                   0x2000'0454     0x0  <Block>
+    CODE_RAM_start_section
+                          uninit   0x2000'0454     0x0  <internal module>
+    code_ram_region_start_section
+                          uninit   0x2000'0454     0x0  <internal module>
+    code_ram_region_end_section
+                          uninit   0x2000'0454     0x0  <internal module>
+    CODE_RAM_end_section  uninit   0x2000'0454     0x0  <internal module>
+
+"RAM_DATA_RAM":                                   0x78
+  DATA_RAM_block                   0x2000'0454    0x78  <Block>
+    DATA_RAM_start_section
+                          uninit   0x2000'0454     0x0  <internal module>
+    data_region_start_section
+                          uninit   0x2000'0454     0x0  <internal module>
+    data                           0x2000'0454    0x78  <Block>
+      data-1                       0x2000'0454    0x78  <Init block>
+        .data             inited   0x2000'0454    0x18  clock_config.o [2]
+        .data             inited   0x2000'046c    0x10  clock_config.o [2]
+        .data             inited   0x2000'047c     0x4  clock_config.o [2]
+        .data             inited   0x2000'0480     0x4  mpwm_common.o [8]
+        .data             inited   0x2000'0484     0x8  mpwm_common.o [8]
+        .data             inited   0x2000'048c     0x8  mpwm_common.o [8]
+        .data             inited   0x2000'0494    0x28  mpwm_config.o [2]
+        .data             inited   0x2000'04bc     0x8  mpwm_config.o [2]
+        .data             inited   0x2000'04c4     0x4  system_YTM32B1LE1.o [4]
+        .data             inited   0x2000'04c8     0x1  mpwm_common.o [8]
+        .data             inited   0x2000'04c9     0x1  mpwm_common.o [8]
+        .data             inited   0x2000'04ca     0x1  task_switch.o [11]
+        .data             inited   0x2000'04cb     0x1  task_switch.o [11]
+    data_region_end_section
+                          uninit   0x2000'04cc     0x0  <internal module>
+    DATA_RAM_end_section  uninit   0x2000'04cc     0x0  <internal module>
+                                 - 0x2000'04cc    0x78
+
+"STACK_STACK":                                   0x400
+  STACK_block                      0x2000'1c00   0x400  <Block>
+    STACK_start_section   uninit   0x2000'1c00     0x0  <internal module>
+    STACK_region_start_section
+                          uninit   0x2000'1c00     0x0  <internal module>
+    STACK_empty_block              0x2000'1c00   0x400  <Block>
+      STACK_empty_block   uninit   0x2000'1c00   0x400  <Block tail>
+    STACK_region_end_section
+                          uninit   0x2000'2000     0x0  <internal module>
+    STACK_end_section     uninit   0x2000'2000     0x0  <internal module>
+                                 - 0x2000'2000   0x400
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+       0x3174       0x3177     0x4
+       0x31f0       0xffff  0xce10
+  0x2000'0451  0x2000'0453     0x3
+  0x2000'04cc  0x2000'1bff  0x1734
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+command line/config:
+    <internal module>
+    ------------------------------------------------
+    Total:
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\app: [1]
+    app_tc.o                 1'480                 9
+    main.o                     204       28        4
+    ------------------------------------------------
+    Total:                   1'684       28       13
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board: [2]
+    RamInit0.o                 104
+    RamInit1.o                 320       44
+    RamInit2.o                   2
+    clock_config.o                       92       48
+    lptmr_config.o                       16
+    mpwm_config.o                        48      144
+    pin_mux.o                           280
+    startup.o                   80
+    vector.o                   192
+    vector_table_copy.o        320        4
+    ------------------------------------------------
+    Total:                   1'018      484      192
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\bsp: [3]
+    bsp_indicator.o            136                 1
+    bsp_motor.o                548                22
+    bsp_position_gpio.o      1'172               546
+    bsp_switch.o                56
+    ------------------------------------------------
+    Total:                   1'912               569
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\devices\YTM32B1LE1\startup: [4]
+    system_YTM32B1LE1.o        104        4        4
+    ------------------------------------------------
+    Total:                     104        4        4
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\clock\YTM32B1Lx: [5]
+    clock_YTM32B1Lx.o        2'242       80       20
+    ------------------------------------------------
+    Total:                   2'242       80       20
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\interrupt: [6]
+    interrupt_manager.o        298                 4
+    ------------------------------------------------
+    Total:                     298                 4
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\lptmr: [7]
+    lptmr_driver.o             832        4        4
+    lptmr_hw_access.o           24
+    ------------------------------------------------
+    Total:                     856        4        4
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\mpwm: [8]
+    mpwm_common.o              300       22       26
+    mpwm_pwm_driver.o        1'764
+    ------------------------------------------------
+    Total:                   2'064       22       26
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\pins: [9]
+    pins_driver.o              192
+    pins_port_hw_access.o      472
+    ------------------------------------------------
+    Total:                     664
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\rtos\osif: [10]
+    osif_baremetal.o            24                 4
+    ------------------------------------------------
+    Total:                      24                 4
+
+D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\task: [11]
+    task_ctrl.o                228                21
+    task_position.o            172                 4
+    task_sched.o               192               168
+    task_switch.o              140        2        4
+    ------------------------------------------------
+    Total:                     732        2      197
+
+rt6M_tl.a: [12]
+    ABImemcpy.o                 78
+    ABImemset.o                 78
+    I32DivModFast.o            174
+    I64DivMod.o                124
+    I64DivZer.o                  2
+    I64Mul.o                    50
+    I64Shl.o                    34
+    IntDivZer.o                  2
+    ------------------------------------------------
+    Total:                     542
+
+    Gaps                        16
+    Linker created                             1'216
+----------------------------------------------------
+    Grand Total:            12'156      624    2'249
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+ACMP0_IRQHandler             0x315d    0x8  Code  Wk  vector_table_copy.o [2]
+ADC0_IRQHandler              0x3155    0x8  Code  Wk  vector_table_copy.o [2]
+APP_TC_GetArrivedPos          0x4b9   0x10  Code  Gb  app_tc.o [1]
+APP_TC_Init                   0x2b9   0x3c  Code  Gb  app_tc.o [1]
+APP_TC_PreloadPos             0x2f5   0x62  Code  Gb  app_tc.o [1]
+APP_TC_Update                 0x357  0x158  Code  Gb  app_tc.o [1]
+ARM.exidx_region_end         0x3178         Data  Gb  <internal module>
+ARM.exidx_region_start       0x3178         Data  Gb  <internal module>
+ARM_block$$Base              0x3178          --   Gb  - Linker created -
+ARM_block$$Limit             0x3178          --   Gb  - Linker created -
+ARM_end                      0x3178         Data  Gb  <internal module>
+ARM_start                    0x3178         Data  Gb  <internal module>
+AlreadyAtTarget               0x501   0x34  Code  Lc  app_tc.o [1]
+ApplyDuty                     0xd65   0x38  Code  Lc  bsp_motor.o [3]
+ApplyStopOutput               0xd9d   0x18  Code  Lc  bsp_motor.o [3]
+ArmForSeek                    0x599   0x16  Code  Lc  app_tc.o [1]
+ArriveAt                      0x6af   0x2e  Code  Lc  app_tc.o [1]
+BSP_DbgLog                    0x939   0x50  Code  Gb  bsp_position_gpio.o [3]
+BSP_Indicator_Init           0x24f5   0x12  Code  Gb  bsp_indicator.o [3]
+BSP_Indicator_Set            0x2507   0x4c  Code  Gb  bsp_indicator.o [3]
+BSP_Motor_Brake               0xe8d   0x2e  Code  Gb  bsp_motor.o [3]
+BSP_Motor_ClearLock           0xf49    0xe  Code  Gb  bsp_motor.o [3]
+BSP_Motor_GetDir              0xebb    0x6  Code  Gb  bsp_motor.o [3]
+BSP_Motor_Init                0xdb5   0x22  Code  Gb  bsp_motor.o [3]
+BSP_Motor_SetDir              0xdd7   0xb6  Code  Gb  bsp_motor.o [3]
+BSP_Motor_Stop                0xefd    0xe  Code  Gb  bsp_motor.o [3]
+BSP_Motor_Tick                0xf0b   0x3e  Code  Gb  bsp_motor.o [3]
+BSP_Motor_UpdateEndstopInputs
+                              0xec1   0x3c  Code  Gb  bsp_motor.o [3]
+BSP_PositionGpio_ArmStop
+                              0xbed   0x40  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_ClearFallingEvents
+                              0xbd5   0x12  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_ConsumeFallingEvents
+                              0xbb3   0x1c  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_ConsumeStopTrigger
+                              0xc31   0x24  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_GetActiveMask
+                              0xb6d   0x3a  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_GetInputs
+                              0xb65    0x4  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_HandlePortAInterrupt
+                              0xc5d   0x5a  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_HandlePortBInterrupt
+                              0xcbd   0x28  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_HandlePortDInterrupt
+                              0xce5   0x28  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_Init         0xaa1   0x8c  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_IsInitialized
+                              0xbad    0x6  Code  Gb  bsp_position_gpio.o [3]
+BSP_PositionGpio_Sample
+                              0xb2d   0x38  Code  Gb  bsp_position_gpio.o [3]
+BSP_Switch_Init              0x255d    0x2  Code  Gb  bsp_switch.o [3]
+BSP_Switch_ReadSWA           0x255f   0x18  Code  Gb  bsp_switch.o [3]
+BSP_Switch_ReadSWB           0x2577   0x18  Code  Gb  bsp_switch.o [3]
+BSS_block$$Base         0x2000'00c0          --   Gb  - Linker created -
+BSS_block$$Limit        0x2000'0451          --   Gb  - Linker created -
+BSS_end                 0x2000'0451         Data  Gb  <internal module>
+BSS_start               0x2000'00c0         Data  Gb  <internal module>
+Board_Init                   0x2a11   0x3e  Code  Lc  main.o [1]
+CAN0_ORed_0_15_MB_IRQHandler
+                             0x30e5    0x8  Code  Wk  vector_table_copy.o [2]
+CAN0_ORed_16_31_MB_IRQHandler
+                             0x310d    0x8  Code  Wk  vector_table_copy.o [2]
+CAN0_ORed_Err_Wakeup_IRQHandler
+                             0x30dd    0x8  Code  Wk  vector_table_copy.o [2]
+CLOCK_DRV_GetFreq            0x2231  0x12c  Code  Gb  clock_YTM32B1Lx.o [5]
+CLOCK_DRV_Init               0x1e5b   0x22  Code  Gb  clock_YTM32B1Lx.o [5]
+CLOCK_DRV_ResetModule        0x2223    0xe  Code  Gb  clock_YTM32B1Lx.o [5]
+CLOCK_GetIpcCtrlReg          0x2199   0x10  Code  Lc  clock_YTM32B1Lx.o [5]
+CLOCK_SCU_WaitDividerStable
+                             0x20f1   0x24  Code  Lc  clock_YTM32B1Lx.o [5]
+CLOCK_SCU_WaitFIRCValid
+                             0x2115   0x24  Code  Lc  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_ConfigureSystemClock
+                             0x20b7   0x3a  Code  Lc  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_DisableCmu         0x1e7d    0xe  Code  Lc  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_GetFreq            0x24bd    0xa  Code  Gb  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_Init               0x235d   0x14  Code  Gb  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_SetCmuChannelConfiguration
+                             0x2079   0x3e  Code  Lc  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_SetConfiguration
+                             0x24c7    0x8  Code  Gb  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_SetDefaultCmuChannelConfiguration
+                             0x200d   0x64  Code  Lc  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_SetIpcConfiguration
+                             0x21d5   0x4e  Code  Lc  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_SetScuConfiguration
+                             0x1e95  0x178  Code  Lc  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_UpdateConfiguration
+                             0x2395  0x116  Code  Gb  clock_YTM32B1Lx.o [5]
+CLOCK_SYS_WaitFXOSCValid
+                             0x2139   0x60  Code  Gb  clock_YTM32B1Lx.o [5]
+CMU_SetChCmpHigh             0x1e43    0xc  Code  Lc  clock_YTM32B1Lx.o [5]
+CMU_SetChCmpLow              0x1e4f    0xc  Code  Lc  clock_YTM32B1Lx.o [5]
+CMU_SetChEnable              0x1dff   0x1e  Code  Lc  clock_YTM32B1Lx.o [5]
+CMU_SetChResetEnable         0x1e1d   0x26  Code  Lc  clock_YTM32B1Lx.o [5]
+CODE_RAM_block$$Base    0x2000'0454          --   Gb  - Linker created -
+CODE_RAM_block$$Limit   0x2000'0454          --   Gb  - Linker created -
+CODE_RAM_end            0x2000'0454         Data  Gb  <internal module>
+CODE_RAM_ram_end        0x2000'0454         Data  Gb  <internal module>
+CODE_RAM_ram_start      0x2000'0454         Data  Gb  <internal module>
+CODE_RAM_rom_block$$Base
+                             0x3178          --   Gb  - Linker created -
+CODE_RAM_rom_block$$Limit
+                             0x3178          --   Gb  - Linker created -
+CODE_RAM_rom_end             0x3178         Data  Gb  <internal module>
+CODE_RAM_rom_start           0x3178         Data  Gb  <internal module>
+CODE_RAM_start          0x2000'0454         Data  Gb  <internal module>
+ChooseDirection               0x535   0x64  Code  Lc  app_tc.o [1]
+ClearPendingFlag              0x9bd    0x8  Code  Lc  bsp_position_gpio.o [3]
+CopyLayout                    0x288   0x20  Data  Gb  RamInit1.o [2]
+DATA_RAM_block$$Base    0x2000'0454          --   Gb  - Linker created -
+DATA_RAM_block$$Limit   0x2000'04cc          --   Gb  - Linker created -
+DATA_RAM_end            0x2000'04cc         Data  Gb  <internal module>
+DATA_RAM_ram_end        0x2000'04cc         Data  Gb  <internal module>
+DATA_RAM_ram_start      0x2000'0454         Data  Gb  <internal module>
+DATA_RAM_rom_block$$Base
+                             0x3178          --   Gb  - Linker created -
+DATA_RAM_rom_block$$Limit
+                             0x31f0          --   Gb  - Linker created -
+DATA_RAM_rom_end             0x31f0         Data  Gb  <internal module>
+DATA_RAM_rom_start           0x3178         Data  Gb  <internal module>
+DATA_RAM_start          0x2000'0454         Data  Gb  <internal module>
+DMA0_IRQHandler              0x309d    0x8  Code  Wk  vector_table_copy.o [2]
+DMA1_IRQHandler              0x30a5    0x8  Code  Wk  vector_table_copy.o [2]
+DMA2_IRQHandler              0x30ad    0x8  Code  Wk  vector_table_copy.o [2]
+DMA3_IRQHandler              0x30b5    0x8  Code  Wk  vector_table_copy.o [2]
+DMA_Error_IRQHandler         0x30bd    0x8  Code  Wk  vector_table_copy.o [2]
+DefaultISR                   0x3075    0x8  Code  Gb  vector_table_copy.o [2]
+DisablePositionInterrupts
+                              0x9f3   0x1e  Code  Lc  bsp_position_gpio.o [3]
+EFM_IRQHandler               0x3115    0x8  Code  Wk  vector_table_copy.o [2]
+EMU0_IRQHandler              0x30c5    0x8  Code  Wk  vector_table_copy.o [2]
+EnablePositionInterrupts
+                              0xa11   0x16  Code  Lc  bsp_position_gpio.o [3]
+GPIOA_IRQHandler              0xd4d    0x8  Code  Gb  bsp_position_gpio.o [3]
+GPIOB_IRQHandler              0xd55    0x8  Code  Gb  bsp_position_gpio.o [3]
+GPIOC_IRQHandler             0x3105    0x8  Code  Wk  vector_table_copy.o [2]
+GPIOD_IRQHandler              0xd5d    0x8  Code  Gb  bsp_position_gpio.o [3]
+GPIOE_IRQHandler             0x3135    0x8  Code  Wk  vector_table_copy.o [2]
+HandleDirectionWait           0x6ff   0x6a  Code  Lc  app_tc.o [1]
+HandleHoming                  0x769   0x5e  Code  Lc  app_tc.o [1]
+HandleMoving                  0x7c7   0x60  Code  Lc  app_tc.o [1]
+HandleSeek4WD                 0x827   0x52  Code  Lc  app_tc.o [1]
+HardFault_Handler            0x3085    0x8  Code  Wk  vector_table_copy.o [2]
+I2C0_IRQHandler              0x313d    0x8  Code  Wk  vector_table_copy.o [2]
+INT_SYS_ClearPending         0x1169    0xa  Code  Gb  interrupt_manager.o [6]
+INT_SYS_DisableIRQ           0x1115    0xa  Code  Gb  interrupt_manager.o [6]
+INT_SYS_DisableIRQGlobal
+                             0x1139    0xc  Code  Gb  interrupt_manager.o [6]
+INT_SYS_EnableIRQ            0x110b    0xa  Code  Gb  interrupt_manager.o [6]
+INT_SYS_EnableIRQGlobal
+                             0x111f   0x1a  Code  Gb  interrupt_manager.o [6]
+INT_SYS_SetPriority          0x115d    0xc  Code  Gb  interrupt_manager.o [6]
+IPC_ResetModule              0x1c39   0x12  Code  Lc  clock_YTM32B1Lx.o [5]
+IPC_SetClockMode             0x1c4b   0x1c  Code  Lc  clock_YTM32B1Lx.o [5]
+IPC_SetPeripheralClockControl
+                             0x1c0d   0x2c  Code  Lc  clock_YTM32B1Lx.o [5]
+IVT_RAM_block$$Base     0x2000'0000          --   Gb  - Linker created -
+IVT_RAM_block$$Limit    0x2000'00c0          --   Gb  - Linker created -
+IVT_RAM_empty_block$$Base
+                        0x2000'0000          --   Gb  - Linker created -
+IVT_RAM_empty_block$$Limit
+                        0x2000'00c0          --   Gb  - Linker created -
+IVT_RAM_end             0x2000'00c0         Data  Gb  <internal module>
+IVT_RAM_memory_end {Abs}
+                        0x2000'00bf         Data  Gb  <internal module>
+IVT_RAM_memory_start {Abs}
+                        0x2000'0000         Data  Gb  <internal module>
+IVT_RAM_region_end      0x2000'00c0         Data  Gb  <internal module>
+IVT_RAM_region_start    0x2000'0000         Data  Gb  <internal module>
+IVT_RAM_start           0x2000'0000         Data  Gb  <internal module>
+IVT_block$$Base                 0x0          --   Gb  - Linker created -
+IVT_block$$Limit               0xc0          --   Gb  - Linker created -
+IVT_end                        0xc0         Data  Gb  <internal module>
+IVT_memory_end {Abs}           0xbf         Data  Gb  <internal module>
+IVT_memory_start {Abs}          0x0         Data  Gb  <internal module>
+IVT_start                       0x0         Data  Gb  <internal module>
+InputIsActive                 0x8d1   0x14  Code  Lc  bsp_position_gpio.o [3]
+Is4WdPositionActive           0x4e9   0x18  Code  Lc  app_tc.o [1]
+IsPOR                        0x2e3d   0x16  Code  Lc  RamInit1.o [2]
+LPTMR_Config                  0x140   0x10  Data  Gb  lptmr_config.o [2]
+MPWM0_Ch0_Ch7_IRQHandler
+                             0x30d5    0x8  Code  Wk  vector_table_copy.o [2]
+MPWM0_Ovf_IRQHandler         0x30cd    0x8  Code  Wk  vector_table_copy.o [2]
+MPWM_ClearLdok               0x1241    0x8  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_DRV_CalculateCompareValue
+                             0x1655   0xc8  Code  Gb  mpwm_pwm_driver.o [8]
+MPWM_DRV_ConvertFreqToPeriodTicks
+                             0x1947   0x1c  Code  Gb  mpwm_common.o [8]
+MPWM_DRV_EnableCounter       0x1925   0x12  Code  Gb  mpwm_common.o [8]
+MPWM_DRV_GetFrequency        0x1937   0x10  Code  Gb  mpwm_common.o [8]
+MPWM_DRV_Init                0x186d   0x80  Code  Gb  mpwm_common.o [8]
+MPWM_DRV_InitPwm             0x1367  0x2de  Code  Gb  mpwm_pwm_driver.o [8]
+MPWM_DRV_SetClkSrc           0x18ed   0x38  Code  Gb  mpwm_common.o [8]
+MPWM_DRV_SetLdok             0x1969    0xc  Code  Gb  mpwm_common.o [8]
+MPWM_DRV_UpdateChannelDutyCycle
+                             0x171d   0x7c  Code  Gb  mpwm_pwm_driver.o [8]
+MPWM_DRV_UpdateChannelPeriodAndDutyCycle
+                             0x1799   0xb2  Code  Gb  mpwm_pwm_driver.o [8]
+MPWM_EnableCounter           0x1859    0x8  Code  Lc  mpwm_common.o [8]
+MPWM_PWM_Config0        0x2000'04bc    0x8  Data  Gb  mpwm_config.o [2]
+MPWM_PWM_Config0ChConfig
+                        0x2000'0494   0x28  Data  Gb  mpwm_config.o [2]
+MPWM_Reset                   0x1861    0xc  Code  Lc  mpwm_common.o [8]
+MPWM_SetChannelCompare       0x135d    0xa  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetChannelIntEnState
+                             0x1197   0x22  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetChannelMode          0x131b   0x38  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetChannelPeriod        0x1353    0xa  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetChannelTofIntEnState
+                             0x1175   0x22  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetClkPrs               0x12e1   0x3a  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetCmpOutputTrigEnState
+                             0x1249   0x44  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetDebugMode            0x11fd   0x44  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetOutputInit           0x11b9    0x4  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetPerOutputTrigEnState
+                             0x128d   0x44  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetPolarity             0x11bd    0x4  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_SetReloadSrc            0x11c1   0x3c  Code  Lc  mpwm_pwm_driver.o [8]
+MPWM_State0             0x2000'0318   0x60  Data  Gb  mpwm_config.o [2]
+NMI_Handler                  0x307d    0x8  Code  Wk  vector_table_copy.o [2]
+PCU_CMU_IRQHandler           0x3125    0x8  Code  Wk  vector_table_copy.o [2]
+PINS_ClearPinIntFlagCmd
+                              0xfe1    0x8  Code  Lc  pins_driver.o [9]
+PINS_ConfigDigitalFilter
+                             0x19b5   0x26  Code  Lc  pins_port_hw_access.o [9]
+PINS_DRV_ClearPinIntFlagCmd
+                             0x1015    0x8  Code  Gb  pins_driver.o [9]
+PINS_DRV_GetPortIntFlag
+                             0x101d    0x8  Code  Gb  pins_driver.o [9]
+PINS_DRV_Init                 0xfed   0x1e  Code  Gb  pins_driver.o [9]
+PINS_DRV_ReadPin             0x102f   0x1a  Code  Gb  pins_driver.o [9]
+PINS_DRV_SetPinIntSel        0x100b    0xa  Code  Gb  pins_driver.o [9]
+PINS_DRV_WritePin            0x1025    0xa  Code  Gb  pins_driver.o [9]
+PINS_GPIO_ClearPins           0xf8d    0x4  Code  Lc  pins_driver.o [9]
+PINS_GPIO_ClearPins          0x1989    0x4  Code  Lc  pins_port_hw_access.o [9]
+PINS_GPIO_ReadPins            0xfb9    0x6  Code  Lc  pins_driver.o [9]
+PINS_GPIO_SetPins             0xf89    0x4  Code  Lc  pins_driver.o [9]
+PINS_GPIO_SetPins            0x1985    0x4  Code  Lc  pins_port_hw_access.o [9]
+PINS_GPIO_WritePin            0xf91   0x28  Code  Lc  pins_driver.o [9]
+PINS_GPIO_WritePin           0x198d   0x28  Code  Lc  pins_port_hw_access.o [9]
+PINS_GetPortIntFlag           0xfe9    0x4  Code  Lc  pins_driver.o [9]
+PINS_Init                    0x19db  0x174  Code  Gb  pins_port_hw_access.o [9]
+PINS_SetPinIntSel             0xfbf   0x22  Code  Lc  pins_driver.o [9]
+PendSV_Handler               0x3095    0x8  Code  Wk  vector_table_copy.o [2]
+PosToInd                     0x2bc9   0x22  Code  Lc  task_ctrl.o [11]
+ProcessHitMask                0xa27   0x7a  Code  Lc  bsp_position_gpio.o [3]
+RAM_memory_end {Abs}    0x2000'1bff         Data  Gb  <internal module>
+RAM_memory_start {Abs}  0x2000'00c0         Data  Gb  <internal module>
+RamInit0                     0x2dd5         Code  Wk  RamInit0.o [2]
+RamInit1                     0x2e53  0x11c  Code  Gb  RamInit1.o [2]
+RamInit2                      0x8cf    0x2  Code  Wk  RamInit2.o [2]
+ReadActiveMaskDirect          0x8e5   0x54  Code  Lc  bsp_position_gpio.o [3]
+ReadRaw                      0x2b3d   0x24  Code  Lc  task_switch.o [11]
+Replan                        0x64d   0x62  Code  Lc  app_tc.o [1]
+RequestMotion                 0x5af   0x9e  Code  Lc  app_tc.o [1]
+Reset_Handler                0x2f7d         Code  Wk  startup.o [2]
+SCHED_Init                   0x2cbf   0x26  Code  Gb  task_sched.o [11]
+SCHED_RegisterTask           0x2ce5   0x3a  Code  Gb  task_sched.o [11]
+SCHED_Run                    0x2d1f   0x42  Code  Gb  task_sched.o [11]
+SCU_EnableFirc               0x1d93   0x20  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_EnableFxosc              0x1cdb   0x20  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_FircDeepSleepEnable
+                             0x1db3   0x20  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_GetDividerStable         0x1deb   0x14  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_GetFIRCValid             0x1dd3    0xc  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_GetFXOSCValid            0x1ddf    0xc  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_GetFastBusClkDiv         0x1c9d    0xa  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_GetSlowBusClkDiv         0x1cb9    0x8  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_GetSysClkDiv             0x1c7d    0xa  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_GetSysClkSrc             0x1cd3    0x8  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_SetFastBusClkDiv         0x1c87   0x16  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_SetFxoscALC              0x1d31   0x22  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_SetFxoscBypassMode       0x1cfb   0x20  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_SetFxoscGain             0x1d1b   0x16  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_SetSlowBusClkDiv         0x1ca7   0x12  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_SetSysClkDiv             0x1c67   0x16  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_SetSysClkSrc             0x1cc1   0x12  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_SircDeepSleepEnable
+                             0x1d53   0x20  Code  Lc  clock_YTM32B1Lx.o [5]
+SCU_SircStandbyEnable        0x1d73   0x20  Code  Lc  clock_YTM32B1Lx.o [5]
+SPI0_IRQHandler              0x3145    0x8  Code  Wk  vector_table_copy.o [2]
+SPI1_IRQHandler              0x314d    0x8  Code  Wk  vector_table_copy.o [2]
+STACK_block$$Base       0x2000'1c00          --   Gb  - Linker created -
+STACK_block$$Limit      0x2000'2000          --   Gb  - Linker created -
+STACK_empty_block$$Base
+                        0x2000'1c00          --   Gb  - Linker created -
+STACK_empty_block$$Limit
+                        0x2000'2000          --   Gb  - Linker created -
+STACK_end               0x2000'2000         Data  Gb  <internal module>
+STACK_memory_end {Abs}  0x2000'1fff         Data  Gb  <internal module>
+STACK_memory_start {Abs}
+                        0x2000'1c00         Data  Gb  <internal module>
+STACK_region_end        0x2000'2000         Data  Gb  <internal module>
+STACK_region_start      0x2000'1c00         Data  Gb  <internal module>
+STACK_start             0x2000'1c00         Data  Gb  <internal module>
+SVC_Handler                  0x308d    0x8  Code  Wk  vector_table_copy.o [2]
+SetError                      0x6dd   0x22  Code  Lc  app_tc.o [1]
+SetHallBEdge                  0x9c5   0x2e  Code  Lc  bsp_position_gpio.o [3]
+SwToPos                       0x4c9   0x20  Code  Lc  app_tc.o [1]
+SysTick_Handler              0x2dc7    0x8  Code  Gb  osif_baremetal.o [10]
+SystemCoreClock         0x2000'04c4    0x4  Data  Gb  system_YTM32B1LE1.o [4]
+SystemInit                   0x2fe1   0x2a  Code  Gb  system_YTM32B1LE1.o [4]
+SystemSoftwareReset          0x300b    0x8  Code  Gb  system_YTM32B1LE1.o [4]
+TEXT_block$$Base               0xc0          --   Gb  - Linker created -
+TEXT_block$$Limit            0x3174          --   Gb  - Linker created -
+TEXT_end                     0x3174         Data  Gb  <internal module>
+TEXT_memory_end {Abs}        0xffff         Data  Gb  <internal module>
+TEXT_memory_start {Abs}
+                               0xc0         Data  Gb  <internal module>
+TEXT_start                     0xc0         Data  Gb  <internal module>
+Task_Ctrl_Init               0x2beb   0x18  Code  Gb  task_ctrl.o [11]
+Task_Ctrl_Run                0x2c03   0xa0  Code  Gb  task_ctrl.o [11]
+Task_Position_ConsumeFallingEvents
+                             0x2b21    0x8  Code  Gb  task_position.o [11]
+Task_Position_GetInputs
+                             0x2b19    0x8  Code  Gb  task_position.o [11]
+Task_Position_Init           0x2a91   0x26  Code  Gb  task_position.o [11]
+Task_Position_IsReady        0x2b29    0x6  Code  Gb  task_position.o [11]
+Task_Position_Run            0x2ab7   0x62  Code  Gb  task_position.o [11]
+Task_Switch_GetState         0x2bb5    0x6  Code  Gb  task_switch.o [11]
+Task_Switch_Init             0x2b61   0x1c  Code  Gb  task_switch.o [11]
+Task_Switch_Run              0x2b7d   0x38  Code  Gb  task_switch.o [11]
+UART0_IRQHandler             0x316d    0x8  Code  Wk  vector_table_copy.o [2]
+UART1_IRQHandler             0x3165    0x8  Code  Wk  vector_table_copy.o [2]
+UpdateInputsFromMask          0x989   0x34  Code  Lc  bsp_position_gpio.o [3]
+VectorTableCopy              0x3035   0x30  Code  Gb  vector_table_copy.o [2]
+WDG0_IRQHandler              0x312d    0x8  Code  Wk  vector_table_copy.o [2]
+WriteOutputs                 0x24d5   0x20  Code  Lc  bsp_indicator.o [3]
+ZeroLayout                    0x2a8    0xc  Data  Gb  RamInit1.o [2]
+__NVIC_ClearPendingIRQ       0x1081   0x18  Code  Lc  interrupt_manager.o [6]
+__NVIC_DisableIRQ            0x1061   0x20  Code  Lc  interrupt_manager.o [6]
+__NVIC_EnableIRQ             0x1049   0x18  Code  Lc  interrupt_manager.o [6]
+__NVIC_SetPriority           0x1099   0x72  Code  Lc  interrupt_manager.o [6]
+__NVIC_SystemReset           0x2fcd   0x14  Code  Lc  system_YTM32B1LE1.o [4]
+__aeabi_idiv0                0x24d1         Code  Gb  IntDivZer.o [12]
+__aeabi_ldiv0                0x29c1         Code  Gb  I64DivZer.o [12]
+__aeabi_llsl                 0x2985         Code  Gb  I64Shl.o [12]
+__aeabi_lmul                 0x28d5         Code  Gb  I64Mul.o [12]
+__aeabi_memcpy               0x2da1         Code  Gb  ABImemcpy.o [12]
+__aeabi_memcpy4              0x2d6d         Code  Gb  ABImemcpy.o [12]
+__aeabi_memcpy8              0x2d6d         Code  Gb  ABImemcpy.o [12]
+__aeabi_memset                0x881         Code  Gb  ABImemset.o [12]
+__aeabi_uidiv                0x1b5d         Code  Gb  I32DivModFast.o [12]
+__aeabi_uidivmod             0x1b5d         Code  Gb  I32DivModFast.o [12]
+__aeabi_uldivmod             0x2907         Code  Gb  I64DivMod.o [12]
+__iar_Memcpy                 0x2dad         Code  Gb  ABImemcpy.o [12]
+__iar_Memset4_word            0x8a1         Code  Gb  ABImemset.o [12]
+__iar_Memset_word             0x88d         Code  Gb  ABImemset.o [12]
+bss$$Base               0x2000'00c0          --   Gb  - Linker created -
+bss$$Limit              0x2000'0451          --   Gb  - Linker created -
+bss_region_end          0x2000'0451         Data  Gb  <internal module>
+bss_region_start        0x2000'00c0         Data  Gb  <internal module>
+clockNameMappings              0xf0   0x50  Data  Gb  clock_YTM32B1Lx.o [5]
+clock_config0ClockManager
+                        0x2000'046c   0x10  Data  Gb  clock_config.o [2]
+clock_config0CmuConfig         0xe4    0xc  Data  Gb  clock_config.o [2]
+clock_config0PeripheralClockConfig
+                        0x2000'0454   0x18  Data  Gb  clock_config.o [2]
+clock_config0ScuConfig         0xc0   0x24  Data  Gb  clock_config.o [2]
+code_ram_region_end     0x2000'0454         Data  Gb  <internal module>
+code_ram_region_start   0x2000'0454         Data  Gb  <internal module>
+data$$Base              0x2000'0454          --   Gb  - Linker created -
+data$$Limit             0x2000'04cc          --   Gb  - Linker created -
+data_region_end         0x2000'04cc         Data  Gb  <internal module>
+data_region_start       0x2000'0454         Data  Gb  <internal module>
+data_rom$$Base               0x3178          --   Gb  - Linker created -
+data_rom$$Limit              0x31f0          --   Gb  - Linker created -
+eTMR0_CH_0_7_IRQHandler
+                             0x30ed    0x8  Code  Wk  vector_table_copy.o [2]
+eTMR0_Fault_IRQHandler       0x30f5    0x8  Code  Wk  vector_table_copy.o [2]
+eTMR0_Ovf_IRQHandler         0x30fd    0x8  Code  Wk  vector_table_copy.o [2]
+g_brakeEnterCount       0x2000'00d4    0x4  Data  Gb  bsp_motor.o [3]
+g_clockManCallbacksArr  0x2000'02f0    0x4  Data  Gb  clock_config.o [2]
+g_clockManConfigsArr    0x2000'047c    0x4  Data  Gb  clock_config.o [2]
+g_clockState            0x2000'02f4   0x10  Data  Lc  clock_YTM32B1Lx.o [5]
+g_dbgEvt                0x2000'00e4  0x200  Data  Gb  bsp_position_gpio.o [3]
+g_dbgIdx                0x2000'044d    0x1  Data  Gb  bsp_position_gpio.o [3]
+g_dbgIrqcAtArm          0x2000'00d8    0x4  Data  Gb  bsp_position_gpio.o [3]
+g_dbgIsrCount           0x2000'0438    0x2  Data  Gb  bsp_position_gpio.o [3]
+g_dbgIsrLevels          0x2000'043a    0x2  Data  Gb  bsp_position_gpio.o [3]
+g_dbgPdirA              0x2000'02e4    0x4  Data  Gb  bsp_position_gpio.o [3]
+g_dbgPdirB              0x2000'02e8    0x4  Data  Gb  bsp_position_gpio.o [3]
+g_dbgPdirD              0x2000'02ec    0x4  Data  Gb  bsp_position_gpio.o [3]
+g_dbgRstSrc             0x2000'0310    0x4  Data  Gb  main.o [1]
+g_dbgTgtHist            0x2000'00c0    0x8  Data  Gb  app_tc.o [1]
+g_dbgTgtIdx             0x2000'0442    0x1  Data  Gb  app_tc.o [1]
+g_dirChangeCount        0x2000'00cc    0x4  Data  Gb  bsp_motor.o [3]
+g_fxoscClkFreq          0x2000'0304    0x4  Data  Lc  clock_YTM32B1Lx.o [5]
+g_interruptDisableCount
+                        0x2000'0308    0x4  Data  Lc  interrupt_manager.o [6]
+g_lptmrBase                   0x150    0x4  Data  Lc  lptmr_driver.o [7]
+g_motorStartCount       0x2000'00d0    0x4  Data  Gb  bsp_motor.o [3]
+g_mpwmBase              0x2000'0480    0x4  Data  Gb  mpwm_common.o [8]
+g_mpwmChnIrqId          0x2000'0484    0x8  Data  Gb  mpwm_common.o [8]
+g_mpwmClk               0x2000'04c9    0x1  Data  Lc  mpwm_common.o [8]
+g_mpwmIpcClkId          0x2000'04c8    0x1  Data  Lc  mpwm_common.o [8]
+g_mpwmOvfIrqId          0x2000'048c    0x8  Data  Gb  mpwm_common.o [8]
+g_mpwmState             0x2000'0314    0x4  Data  Gb  mpwm_common.o [8]
+g_pin_mux_InitConfigArr0
+                              0x170  0x118  Data  Gb  pin_mux.o [2]
+g_sysTick_ms            0x2000'0390    0x4  Data  Gb  task_sched.o [11]
+i_region_end                   0xc0         Data  Gb  <internal module>
+i_region_start                 0xc0         Data  Gb  <internal module>
+isr_vector$$Base                0x0          --   Gb  - Linker created -
+isr_vector$$Limit              0xc0          --   Gb  - Linker created -
+isr_vector_region_end          0xc0         Data  Gb  <internal module>
+isr_vector_region_start
+                                0x0         Data  Gb  <internal module>
+lpTMR0_IRQHandler            0x2cad   0x12  Code  Gb  task_sched.o [11]
+lpTMR_ClearCompareFlag       0x25d5    0xa  Code  Lc  lptmr_driver.o [7]
+lpTMR_DRV_ClearCompareFlag
+                             0x28b1    0xe  Code  Gb  lptmr_driver.o [7]
+lpTMR_DRV_Init               0x2787   0x1c  Code  Gb  lptmr_driver.o [7]
+lpTMR_DRV_SetConfig          0x27a3   0xfc  Code  Gb  lptmr_driver.o [7]
+lpTMR_DRV_StartCounter       0x28bf    0xe  Code  Gb  lptmr_driver.o [7]
+lpTMR_Enable                 0x263b    0xe  Code  Lc  lptmr_driver.o [7]
+lpTMR_Init                   0x29a7   0x18  Code  Gb  lptmr_hw_access.o [7]
+lpTMR_SetBypass              0x266f   0x20  Code  Lc  lptmr_driver.o [7]
+lpTMR_SetClockSource         0x265d   0x12  Code  Lc  lptmr_driver.o [7]
+lpTMR_SetCompareValue        0x268f    0xe  Code  Lc  lptmr_driver.o [7]
+lpTMR_SetDmaRequest          0x2595   0x20  Code  Lc  lptmr_driver.o [7]
+lpTMR_SetFreeRunning         0x2607   0x20  Code  Lc  lptmr_driver.o [7]
+lpTMR_SetInterrupt           0x25b5   0x20  Code  Lc  lptmr_driver.o [7]
+lpTMR_SetPinPolarity         0x25f3   0x14  Code  Lc  lptmr_driver.o [7]
+lpTMR_SetPinSelect           0x25df   0x14  Code  Lc  lptmr_driver.o [7]
+lpTMR_SetPrescaler           0x2649   0x14  Code  Lc  lptmr_driver.o [7]
+lpTMR_SetWorkMode            0x2627   0x14  Code  Lc  lptmr_driver.o [7]
+lptmr_ChooseClkConfig        0x271d   0x6a  Code  Lc  lptmr_driver.o [7]
+lptmr_compute_nticks         0x26c1   0x28  Code  Lc  lptmr_driver.o [7]
+lptmr_us2nn                  0x269d   0x24  Code  Lc  lptmr_driver.o [7]
+main                         0x29c5   0x4c  Code  Gb  main.o [1]
+nticks2compare_ticks         0x26e9   0x34  Code  Lc  lptmr_driver.o [7]
+osif_Tick                    0x2dbd    0xa  Code  Lc  osif_baremetal.o [10]
+pTMR0_IRQHandler             0x311d    0x8  Code  Wk  vector_table_copy.o [2]
+rodata$$Base                   0xc0          --   Gb  - Linker created -
+rodata$$Limit                 0x2b8          --   Gb  - Linker created -
+rodata_region_end             0x2b8         Data  Gb  <internal module>
+rodata_region_start            0xc0         Data  Gb  <internal module>
+s_arm                   0x2000'044b    0x1  Data  Lc  bsp_position_gpio.o [3]
+s_candidateState        0x2000'04cb    0x1  Data  Lc  task_switch.o [11]
+s_curState              0x2000'0443    0x1  Data  Lc  bsp_indicator.o [3]
+s_currentDir            0x2000'0444    0x1  Data  Lc  bsp_motor.o [3]
+s_dbgSeq                0x2000'043c    0x2  Data  Lc  bsp_position_gpio.o [3]
+s_debounceCount         0x2000'0440    0x2  Data  Lc  task_switch.o [11]
+s_fallingEventMask      0x2000'00dc    0x4  Data  Lc  bsp_position_gpio.o [3]
+s_inBrake               0x2000'0449    0x1  Data  Lc  bsp_motor.o [3]
+s_initialized           0x2000'044a    0x1  Data  Lc  bsp_position_gpio.o [3]
+s_inputs                0x2000'00e0    0x4  Data  Lc  bsp_position_gpio.o [3]
+s_lastMask              0x2000'044f    0x1  Data  Lc  task_position.o [11]
+s_lastNonStopDir        0x2000'0448    0x1  Data  Lc  bsp_motor.o [3]
+s_lockEndstopLatched    0x2000'0446    0x1  Data  Lc  bsp_motor.o [3]
+s_locked                0x2000'0445    0x1  Data  Lc  bsp_motor.o [3]
+s_lptmrClkFreq          0x2000'030c    0x4  Data  Lc  lptmr_driver.o [7]
+s_osif_tick_cnt         0x2000'0378    0x4  Data  Lc  osif_baremetal.o [10]
+s_positionPreloaded     0x2000'044e    0x1  Data  Lc  task_ctrl.o [11]
+s_ready                 0x2000'0450    0x1  Data  Lc  task_position.o [11]
+s_runTicks              0x2000'00c8    0x4  Data  Lc  bsp_motor.o [3]
+s_stableCount           0x2000'043e    0x2  Data  Lc  task_position.o [11]
+s_stableState           0x2000'04ca    0x1  Data  Lc  task_switch.o [11]
+s_stopTriggered         0x2000'044c    0x1  Data  Lc  bsp_position_gpio.o [3]
+s_taskCount             0x2000'0434    0x4  Data  Lc  task_sched.o [11]
+s_tasks                 0x2000'0394   0xa0  Data  Lc  task_sched.o [11]
+s_tcCtx                 0x2000'037c   0x14  Data  Lc  task_ctrl.o [11]
+s_twoWdEndstopLatched   0x2000'0447    0x1  Data  Lc  bsp_motor.o [3]
+s_vectors                     0x2b4    0x4  Data  Lc  vector_table_copy.o [2]
+text$$Base                    0x2b8          --   Gb  - Linker created -
+text$$Limit                  0x3174          --   Gb  - Linker created -
+text_region_end              0x3174         Data  Gb  <internal module>
+text_region_start             0x2b8         Data  Gb  <internal module>
+
+
+[1] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\app
+[2] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\board
+[3] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\bsp
+[4] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\devices\YTM32B1LE1\startup
+[5] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\clock\YTM32B1Lx
+[6] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\interrupt
+[7] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\lptmr
+[8] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\mpwm
+[9] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\platform\drivers\src\pins
+[10] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\rtos\osif
+[11] = D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Obj\task
+[12] = rt6M_tl.a
+
+  12'156 bytes of readonly  code memory
+     624 bytes of readonly  data memory
+   2'249 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

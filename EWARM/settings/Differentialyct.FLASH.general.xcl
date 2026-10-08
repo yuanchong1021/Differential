@@ -1,0 +1,13 @@
+"D:\soft\IAR\arm\bin\armPROC.dll" 
+
+"D:\soft\IAR\arm\bin\armJLINK.dll" 
+
+"D:\project\YTM32B1LE14H0MTHR\Differential\EWARM\FLASH\Exe\Differentialyct.out" 
+
+--plugin="D:\soft\IAR\arm\bin\armbat.dll" 
+
+--flash_loader="D:\soft\IAR\arm/config/flashloader/YTMicro/FlashYTM32B1LE14.board" 
+
+
+
+
